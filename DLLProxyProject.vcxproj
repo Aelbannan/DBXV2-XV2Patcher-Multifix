@@ -63,11 +63,13 @@
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
     <OutDir>$(SolutionDir)_build\$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>version</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
     <OutDir>$(SolutionDir)_build\$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>version</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">
     <OutDir>$(SolutionDir)_build\$(Platform)\$(Configuration)\</OutDir>
@@ -147,6 +149,8 @@
       <SubSystem>Windows</SubSystem>
       <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">
@@ -186,6 +190,8 @@
       <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <FullProgramDatabaseFile>false</FullProgramDatabaseFile>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
